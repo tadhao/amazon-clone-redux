@@ -1,38 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: rgb(247, 247, 247);
   min-height: 100vh;
+}
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Product */
+
+.product {
+  padding: 10px 15px;
+  margin-bottom: 30px !important;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1px solid transparent !important;
+}
+
+.product__image {
+  margin: 10px auto;
+}
+
+.product__box {
+  text-align: left;
+}
+
+.product__rating {
+  color: #e67a00;
+  margin-right: 2px;
+  margin-top: -5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.product__startCount {
+  margin-top: -5px;
+  margin-left: 8px;
+  color: #0066c0;
+}
+.product__price {
+  margin-top: -10px;
+}
+.product__price span {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.788);
+}
+.minCategory {
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  padding-top: 5px;
+}
+.minCategory p {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.product__title {
+  color: black;
+}
+.product__title:hover {
+  color: #e67a00;
+  text-decoration: none;
+}
+
+.loader {
+  color: #e67a00;
+  top: 50%;
+  left: 50%;
+}
+
+.cart__items {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.cart__item:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+.cart__image {
+  background-color: blue !important;
+}
+
+.cart__heading {
+  color: rgba(0, 0, 0, 0.897) !important;
+  font-weight: bold !important;
+}
+.cart__heading:hover {
+  color: #e67a00 !important;
+}
+
+small {
+  margin-bottom: -10px;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+}
+
+.btn__plus:hover {
+  color: #e67a00;
+}
+.delete__image {
+  width: 19px;
+}
+
+.message {
+  background-color: green;
+  border-radius: 3px;
+  padding: 3px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggestion {
+  position: absolute;
+  z-index: 100;
+  width: 97%;
+  top: 44px;
 }
