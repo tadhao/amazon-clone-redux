@@ -1,6 +1,6 @@
 .category {
     max-width: 1300px;
-    margin-top: -200px;
+    margin-top: -200px !important;
     font-size: 1.6rem;
   }
   .single__category {
