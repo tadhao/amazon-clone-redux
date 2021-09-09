@@ -3,6 +3,7 @@ import './App.css';
 import ProductDetails from "./components/ProductDetail/ProductDetail";
 import Android from "./pages/Android";
 import Camera from "./pages/Camera";
+import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 import Laptop from "./pages/Laptop";
 
@@ -27,6 +28,9 @@ function App() {
           {/* Product Details */}
           <Route exact path="/:category/:id">
             <ProductDetails />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout />
           </Route>
         </Switch>
       </div>
